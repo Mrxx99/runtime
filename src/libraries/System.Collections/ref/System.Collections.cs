@@ -629,6 +629,7 @@ namespace System.Collections.Generic
         public static bool TryGetAlternateLookup<TKey, TValue, TAlternateKey>(this System.Collections.Generic.Dictionary<TKey, TValue> dictionary, out System.Collections.Generic.Dictionary<TKey, TValue>.AlternateLookup<TAlternateKey> lookup) where TKey : notnull where TAlternateKey : notnull, allows ref struct { throw null; }
         public static bool TryGetAlternateLookup<T, TAlternate>(this System.Collections.Generic.HashSet<T> set, out System.Collections.Generic.HashSet<T>.AlternateLookup<TAlternate> lookup) where TAlternate : allows ref struct { throw null; }
         public static System.Collections.ObjectModel.ReadOnlyCollection<T> AsReadOnly<T>(this IList<T> list) { throw null; }
+        public static System.Collections.ObjectModel.ReadOnlySet<T> AsReadOnly<T>(this ISet<T> set) { throw null; }
         public static System.Collections.ObjectModel.ReadOnlyDictionary<TKey, TValue> AsReadOnly<TKey, TValue>(this IDictionary<TKey, TValue> dictionary) where TKey : notnull { throw null; }
     }
     public abstract partial class Comparer<T> : System.Collections.Generic.IComparer<T>, System.Collections.IComparer
