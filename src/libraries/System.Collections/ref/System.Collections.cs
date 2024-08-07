@@ -580,6 +580,8 @@ namespace System.Collections.Generic
         }
     }
 }
+#endif // !BUILDING_CORELIB_REFERENCE
+
 namespace System.Collections.ObjectModel
 {
     public partial class ReadOnlySet<T> : System.Collections.Generic.ICollection<T>, System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IReadOnlyCollection<T>, System.Collections.Generic.IReadOnlySet<T>, System.Collections.Generic.ISet<T>, System.Collections.ICollection, System.Collections.IEnumerable
@@ -612,7 +614,6 @@ namespace System.Collections.ObjectModel
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() { throw null; }
     }
 }
-#endif // !BUILDING_CORELIB_REFERENCE
 namespace System.Collections.Generic
 {
     public static partial class CollectionExtensions
